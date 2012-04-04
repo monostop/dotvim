@@ -16,4 +16,6 @@ set number
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 
 " Set colorscheme
-:colorscheme mayansmoke
+if has('gui_running')
+	colorscheme mayansmoke
+endif
