@@ -1,3 +1,7 @@
+" For handling plugins
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+call pathogen#infect()
+
 set shiftwidth=4
 set tabstop=4
 " Turn on syntax coloring
@@ -8,8 +12,6 @@ filetype plugin indent on
 set number
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 
-" For handling plugins
-call pathogen#infect()
 
 " Set colorscheme
 :colorscheme mayansmoke
