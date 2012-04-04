@@ -3,8 +3,10 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
 
+" Tabs
 set shiftwidth=4
 set tabstop=4
+
 " Turn on syntax coloring
 syntax on
 filetype plugin indent on
