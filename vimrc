@@ -19,3 +19,9 @@ nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 if has('gui_running')
 	colorscheme mayansmoke
 endif
+
+" Overwrite indentation rules for reStructuredText
+au FileType rst setl si indentexpr=""
+
+" Sets expandtab for python files
+au FileType python setl et
