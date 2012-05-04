@@ -1,3 +1,6 @@
+" Remap leader character from \ to ,
+let mapleader = ","
+
 " For handling plugins
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
@@ -25,3 +28,13 @@ au FileType rst setl si indentexpr=""
 
 " Sets expandtab for python files
 au FileType python setl et
+
+" Sets indentation to 2 spaces for html files
+au FileType html setl sw=2 et ts=2
+
+" Set include jinja syntax for html files
+au FileType html setl syntax=jinja
+" Settings for supertab. Setting default to user completion for python files
+" let g:SuperTabDefaultCompletionType ="<c-x><c-u>" for use with :IPython
+
+" Set up pydiction dictionary location
