@@ -34,7 +34,11 @@ au FileType html setl sw=2 et ts=2
 
 " Set include jinja syntax for html files
 au FileType html setl syntax=jinja
-" Settings for supertab. Setting default to user completion for python files
-" let g:SuperTabDefaultCompletionType ="<c-x><c-u>" for use with :IPython
-
-" Set up pydiction dictionary location
+" Eneableing omni completion:
+au FileType python set omnifunc=pythoncomplete#Complete
+au FileType html set omnifunc=htmlcomplete#CompleteTags
+au FileType css set omnifunc=csscomplete#CompleteCSS
+au FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+" Settings for supertab. Setting default to 'context' completion for python files
+let g:SuperTabDefaultCompletionType ="context" 
+set completeopt=menuone,longest,preview
