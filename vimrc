@@ -1,3 +1,6 @@
+" Remap leader to ","
+let mapleader = ","
+
 " For handling plugins
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
@@ -24,3 +27,4 @@ au FileType rst setl si indentexpr=""
 
 " Sets expandtab for python files
 au FileType python setl et
+
