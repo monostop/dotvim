@@ -16,9 +16,8 @@ set number
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 
 " Set colorscheme
-if has('gui_running')
-	colorscheme mayansmoke
-endif
+set t_Co=256
+colorscheme zenburn
 
 " Overwrite indentation rules for reStructuredText
 au FileType rst setl si indentexpr=""
