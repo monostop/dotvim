@@ -19,9 +19,8 @@ set number
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 
 " Set colorscheme
-if has('gui_running')
-	colorscheme mayansmoke
-endif
+set t_Co=256
+colorscheme zenburn
 
 " Overwrite indentation rules for reStructuredText
 au FileType rst setl si indentexpr=""
@@ -35,11 +34,13 @@ au FileType html setl sw=2 et ts=2
 " Set include jinja syntax for html files
 au FileType html setl syntax=jinja
 au FileType javascript setl syntax=jquery sw=2 et ts=2
-" Eneableing omni completion:
+
+" Enabling omni completion:
 au FileType python set omnifunc=pythoncomplete#Complete
 au FileType html set omnifunc=htmlcomplete#CompleteTags
 au FileType css set omnifunc=csscomplete#CompleteCSS
 au FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+
 " Settings for supertab. Setting default to 'context' completion for python files
 let g:SuperTabDefaultCompletionType ="context" 
 set completeopt=menuone,longest,preview
