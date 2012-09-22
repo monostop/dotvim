@@ -34,6 +34,7 @@ au FileType html setl sw=2 et ts=2
 
 " Set include jinja syntax for html files
 au FileType html setl syntax=jinja
+au FileType javascript setl syntax=jquery sw=2 et ts=2
 " Eneableing omni completion:
 au FileType python set omnifunc=pythoncomplete#Complete
 au FileType html set omnifunc=htmlcomplete#CompleteTags
