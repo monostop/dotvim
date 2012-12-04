@@ -1,6 +1,8 @@
 Installation:
 
 	git clone git://github.com/monostop/dotvim.git ~/.vim
+	git submodule init
+	git submodule update
 
 Create symlinks:
 
