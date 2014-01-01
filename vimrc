@@ -9,10 +9,15 @@ call pathogen#helptags()
 " Tabs
 set shiftwidth=4
 set tabstop=4
+set softtabstop=4
 
 " Turn on syntax coloring
 syntax on
 filetype plugin indent on
+
+" Unusefull stuff
+set nocompatible
+set modelines=0
 
 " Set on line numbering and map F2 to toggle for easy copy code:
 set number
@@ -44,3 +49,12 @@ au FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 " Settings for supertab. Setting default to 'context' completion for python files
 let g:SuperTabDefaultCompletionType ="context" 
 set completeopt=menuone,longest,preview
+
+" Remap jj to <ESC>
+inoremap jj <ESC>
+cnoremap jj <ESC>
+
+" Nerdtree
+
+nmap <F7> :NERDTreeToggle<CR>
+nmap <S-F7> :NERDTreeClose<CR>
