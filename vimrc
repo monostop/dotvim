@@ -55,6 +55,7 @@ inoremap jj <ESC>
 cnoremap jj <ESC>
 
 " Nerdtree
-
+let g:NERDTreeDirArrows=0
 nmap <F7> :NERDTreeToggle<CR>
 nmap <S-F7> :NERDTreeClose<CR>
+
