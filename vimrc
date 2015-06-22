@@ -1,6 +1,9 @@
 " Remap leader character from \ to ,
 let mapleader = ","
 
+" Enable mouse
+set mouse=a
+
 " For handling plugins
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
