@@ -1,3 +1,6 @@
+See more here:
+	http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
+
 Installation:
 
 	git clone git://github.com/monostop/dotvim.git ~/.vim
@@ -8,3 +11,10 @@ Create symlinks:
 
 	ln -s ~/.vim/vimrc ~/.vimrc
 	ln -s ~/.vim/gvimrc ~/.gvimrc
+
+Add new plugin:
+	git submodule add <url to github repo>
+	git commit -a 
+
+Update all submodules:
+	git submodule foreach git pull origin master 
